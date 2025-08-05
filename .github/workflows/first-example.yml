@@ -14,6 +14,10 @@ jobs:
           echo "My First Github Actions Job"
           ls
           cat README.md
+          
+      - name: Install cowsay
+        run: sudo apt-get update && sudo apt-get install -y cowsay
+
 
       - name: Genaerate ASCII Artwork
         run: cowsay "Hello from GitHub Actions!"
